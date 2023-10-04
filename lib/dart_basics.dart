@@ -1,7 +1,11 @@
-import 'dart:io';
+import 'package:dart_basics/cupsize_enum.dart';
+
+import 'myException.dart';
 
 void mainy() {
   helloWorld();
+
+  // final dateNow = DateTime.now();
 }
 
 void helloWorld() {
@@ -28,6 +32,12 @@ void helloWorld() {
   var mixedList = [1, "John", 90, "bob", 43.8, 90.234];
   mixedList.remove("John");
   mixedList.removeAt(1);
+
+  //Sets
+  var mySet = {1, 2, 3}; //or
+  Set<int> mySet2 = {1, 2, 3, 4};
+  mySet2.addAll({3, 4, 5, 6});
+  // print("My Set: $mySet2");
 
   //Maps
   var myMap = {
@@ -136,4 +146,27 @@ void helloWorld() {
   String? str01;
   // print(str01!.length); // or
   // print(str01.length ?? 0);
+
+  //use enum: if used in a switch-case, the default clause is required.
+  // print("Small Enum: ${CupSize.small}");
+
+  //exception handling
+  // try{
+  //   print(10~/0);
+  //
+  // }catch (e){
+  //   print(e.toString());
+  // }finally{
+  //   print("Prints anyway");
+  // }
+
+  // throwException() {
+  //   throw CustomException('This is my first custom exception');
+  // }
+  //
+  // try {
+  //   throwException();
+  // } on CustomException {
+  //   print("custom exception has been obtained");
+  // }
 }

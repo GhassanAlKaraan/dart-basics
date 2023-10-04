@@ -5,6 +5,11 @@ void main(List<String> arguments) {
   dart_basics.mainy();
 
 
-  Person me = Person(name: "Toby",age: 20);
+  //1.Person me = Person(name: "Toby",age: 20);
+  //2.Person him = Person("John", "male", 22);
+
+  //1.him.setSn("098765345678");
+  //2.him.setSn = "wnfowjenfow";
+
 
 }
